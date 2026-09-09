@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>DML Médica — Nuestras redes</title>
+<meta name="description" content="Todas las redes sociales de DML Médica (Distribuidora Médica León): Instagram, Facebook, TikTok, YouTube y canal de WhatsApp.">
+<meta name="theme-color" content="#013F5E">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="__URL__">
+
+<!-- Redes sociales / vista previa al compartir -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DML Médica">
+<meta property="og:title" content="DML Médica — Nuestras redes">
+<meta property="og:description" content="Instagram, Facebook, TikTok, YouTube y canal de WhatsApp de DML Médica.">
+<meta property="og:url" content="__URL__">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/png;base64,__LOGOC__">
+<link rel="apple-touch-icon" href="data:image/png;base64,__LOGOC__">
+
+<style>
+@font-face{font-family:'Neurial';font-weight:400;font-style:normal;font-display:swap;src:url(data:font/woff2;base64,__REG__) format('woff2')}
+@font-face{font-family:'Neurial';font-weight:500;font-style:normal;font-display:swap;src:url(data:font/woff2;base64,__MED__) format('woff2')}
+@font-face{font-family:'Neurial';font-weight:800;font-style:normal;font-display:swap;src:url(data:font/woff2;base64,__XB__) format('woff2')}
+
+:root{
+  --azul:#00577F; --azul-medio:#0A7396; --azul-hondo:#013F5E; --azul-noche:#012234;
+  --teal:#03A6A6; --teal-claro:#2BC4C4; --cian:#5CE0E5; --cian-pale:#CFFFFF;
+  --tinta:#073243;
+  --tipo:'Neurial',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --radio:18px;
+  --linea:rgba(92,224,229,.26);
+  --linea-viva:rgba(92,224,229,.72);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--tipo); font-weight:400; color:#fff;
+  background:var(--azul-hondo);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  min-height:100svh; overflow-x:hidden;
+}
+
+/* ---------- fondo de marca ---------- */
+.fondo{position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(120% 80% at 50% -10%,rgba(92,224,229,.30) 0%,rgba(92,224,229,0) 58%),
+    linear-gradient(163deg,#012234 0%,#013F5E 24%,#00577F 50%,#0A7396 74%,#03A6A6 100%);
+}
+.fondo::after{content:'';position:absolute;inset:0;
+  background:radial-gradient(115% 95% at 50% 42%,transparent 48%,rgba(1,26,42,.55) 100%)}
+.malla{position:fixed;inset:0;z-index:-1;opacity:.085;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.75) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.75) 1px,transparent 1px);
+  background-size:62px 62px;
+  -webkit-mask-image:radial-gradient(70% 55% at 50% 34%,#000 0%,transparent 78%);
+          mask-image:radial-gradient(70% 55% at 50% 34%,#000 0%,transparent 78%)}
+.orbe{position:fixed;border-radius:50%;filter:blur(58px);z-index:-1;pointer-events:none;opacity:.5}
+.orbe.a{width:320px;height:320px;top:-90px;left:-120px;background:rgba(92,224,229,.55);animation:flota 17s ease-in-out infinite}
+.orbe.b{width:300px;height:300px;bottom:-110px;right:-110px;background:rgba(3,166,166,.55);animation:flota 21s ease-in-out infinite reverse}
+@keyframes flota{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(26px,-30px,0)}}
+
+/* ---------- estructura ---------- */
+.envoltura{max-width:470px;margin:0 auto;padding:38px 20px calc(30px + env(safe-area-inset-bottom))}
+
+/* ---------- encabezado ---------- */
+.tapa{text-align:center;margin-bottom:26px}
+.logo{width:min(224px,62vw);height:auto;display:block;margin:0 auto 16px;
+  filter:drop-shadow(0 6px 22px rgba(1,26,42,.45))}
+.rotulo{display:block;font-size:10.5px;font-weight:800;letter-spacing:.20em;text-transform:uppercase;
+  color:var(--cian);opacity:.95;margin-bottom:9px}
+.lema{font-size:16px;font-weight:500;line-height:1.45;color:rgba(255,255,255,.94);
+  max-width:19em;margin:0 auto}
+.chips{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-top:14px}
+.chip{display:inline-flex;align-items:center;gap:6px;
+  padding:6px 13px;border-radius:999px;font-size:11.5px;font-weight:500;letter-spacing:.02em;
+  color:var(--cian-pale);background:rgba(92,224,229,.10);
+  border:1px solid var(--linea);box-shadow:0 0 16px rgba(92,224,229,.14) inset}
+.chip svg{width:12px;height:12px;flex:none}
+
+/* ---------- separador de sección ---------- */
+.titulo-sec{display:flex;align-items:center;gap:12px;margin:0 2px 14px}
+.titulo-sec span{font-size:10.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(207,255,255,.82);white-space:nowrap}
+.titulo-sec::after{content:'';flex:1;height:1px;
+  background:linear-gradient(90deg,var(--linea-viva),rgba(92,224,229,0))}
+
+/* ---------- enlaces ---------- */
+.enlaces{display:flex;flex-direction:column;gap:11px;list-style:none}
+.enlace{
+  display:flex;align-items:center;gap:13px;
+  padding:13px 14px;min-height:68px;
+  border-radius:var(--radio);text-decoration:none;color:#fff;
+  background:linear-gradient(180deg,rgba(255,255,255,.11),rgba(255,255,255,.055));
+  border:1px solid var(--linea);
+  -webkit-backdrop-filter:blur(12px) saturate(1.2); backdrop-filter:blur(12px) saturate(1.2);
+  box-shadow:0 10px 26px rgba(1,26,42,.30), inset 0 1px 0 rgba(255,255,255,.16);
+  transition:transform .22s cubic-bezier(.22,1,.36,1),border-color .22s,box-shadow .22s,background .22s;
+  position:relative;overflow:hidden;
+}
+.enlace::after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.16) 50%,transparent 60%);
+  transform:translateX(-120%);transition:transform .65s ease}
+.enlace:hover{transform:translateY(-2px);border-color:var(--linea-viva);background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.08));box-shadow:0 16px 34px rgba(1,26,42,.38),0 0 0 1px rgba(92,224,229,.20),inset 0 1px 0 rgba(255,255,255,.24)}
+.enlace:hover::after{transform:translateX(120%)}
+.enlace:active{transform:translateY(0) scale(.985)}
+.enlace:focus-visible{outline:3px solid var(--cian);outline-offset:3px}
+
+.icono{width:46px;height:46px;flex:none;border-radius:14px;
+  display:grid;place-items:center;color:#fff;
+  box-shadow:0 6px 16px rgba(1,26,42,.34), inset 0 1px 0 rgba(255,255,255,.28)}
+.icono svg{width:25px;height:25px;display:block}
+.i-ig{background:radial-gradient(120% 120% at 28% 108%,#FDCB5C 0%,#F58529 22%,#DD2A7B 52%,#8134AF 78%,#515BD4 100%)}
+.i-fb{background:linear-gradient(180deg,#3B8CFF,#1877F2)}
+.i-tk{background:linear-gradient(150deg,#2A2A33,#0B0B10)}
+.i-yt{background:linear-gradient(180deg,#FF3B3B,#E00000)}
+.i-wa{background:linear-gradient(180deg,#3FE07C,#20BA5A)}
+.i-web{background:linear-gradient(150deg,#5CE0E5,#03A6A6 60%,#0A7396)}
+
+.txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.txt b{font-size:15.5px;font-weight:800;letter-spacing:-.01em;line-height:1.2}
+.txt i{font-style:normal;font-size:12.5px;font-weight:400;color:rgba(207,255,255,.78);
+  line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.flecha{width:19px;height:19px;flex:none;color:rgba(207,255,255,.55);transition:transform .22s,color .22s}
+.enlace:hover .flecha{transform:translateX(3px);color:var(--cian)}
+
+/* enlace destacado (por si un dia quieres resaltar una red) */
+.enlace.destacado{
+  background:linear-gradient(120deg,rgba(92,224,229,.22),rgba(3,166,166,.16) 55%,rgba(10,115,150,.14));
+  border-color:rgba(92,224,229,.52);
+  box-shadow:0 14px 32px rgba(1,26,42,.38),0 0 26px rgba(92,224,229,.16),inset 0 1px 0 rgba(255,255,255,.26)}
+.enlace.destacado .txt i{color:rgba(255,255,255,.88)}
+.sello{position:absolute;top:0;right:0;font-size:9px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--azul-hondo);background:var(--cian);
+  padding:4px 10px;border-radius:0 var(--radio) 0 12px}
+
+/* ---------- acciones ---------- */
+.acciones{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:48px;padding:0 14px;border-radius:14px;cursor:pointer;
+  font-family:var(--tipo);font-size:13.5px;font-weight:800;letter-spacing:.01em;
+  color:var(--cian-pale);background:rgba(255,255,255,.07);
+  border:1px solid var(--linea);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  transition:transform .2s,border-color .2s,background .2s,color .2s}
+.btn svg{width:17px;height:17px;flex:none}
+.btn:hover{background:rgba(92,224,229,.16);border-color:var(--linea-viva);color:#fff;transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn:focus-visible{outline:3px solid var(--cian);outline-offset:3px}
+
+/* ---------- pie ---------- */
+.pie{margin-top:30px;text-align:center;font-size:11.5px;line-height:1.7;color:rgba(207,255,255,.62)}
+.pie a{color:rgba(207,255,255,.86);text-decoration:none;border-bottom:1px solid rgba(92,224,229,.35)}
+.pie a:hover{color:#fff;border-color:var(--cian)}
+.regla{width:52px;height:3px;border-radius:3px;margin:0 auto 16px;
+  background:linear-gradient(90deg,var(--cian),var(--teal))}
+
+/* ---------- modal QR ---------- */
+.velo{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:22px;
+  background:rgba(1,26,42,.72);-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);
+  opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.velo.abierto{opacity:1;visibility:visible}
+.tarjeta-qr{width:100%;max-width:330px;text-align:center;padding:26px 22px 22px;border-radius:24px;
+  background:linear-gradient(180deg,#fff,#EEFBFC);color:var(--tinta);
+  box-shadow:0 30px 70px rgba(1,26,42,.55);
+  transform:translateY(14px) scale(.97);transition:transform .28s cubic-bezier(.22,1,.36,1)}
+.velo.abierto .tarjeta-qr{transform:none}
+.tarjeta-qr h2{font-size:17px;font-weight:800;letter-spacing:-.01em;margin-bottom:5px}
+.tarjeta-qr p{font-size:12.5px;line-height:1.5;color:#4A6B78;margin-bottom:16px}
+.marco-qr{padding:12px;border-radius:16px;background:#fff;border:2px solid rgba(3,166,166,.28);
+  box-shadow:0 8px 20px rgba(1,60,90,.12)}
+.marco-qr svg{width:100%;height:auto;display:block;shape-rendering:crispEdges}
+.pie-qr{margin-top:14px;font-size:11px;font-weight:500;color:#5A7480;word-break:break-all}
+.cerrar{margin-top:16px;width:100%;min-height:46px;border:0;border-radius:13px;cursor:pointer;
+  font-family:var(--tipo);font-size:14px;font-weight:800;color:#fff;
+  background:linear-gradient(120deg,var(--azul),var(--teal));
+  transition:filter .2s,transform .2s}
+.cerrar:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.cerrar:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+
+/* ---------- avisos ---------- */
+.aviso{position:fixed;left:50%;bottom:26px;transform:translate(-50%,18px);z-index:60;
+  padding:11px 20px;border-radius:999px;font-size:13px;font-weight:500;color:var(--azul-hondo);
+  background:var(--cian-pale);box-shadow:0 12px 30px rgba(1,26,42,.42);
+  opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s;pointer-events:none}
+.aviso.visible{opacity:1;visibility:visible;transform:translate(-50%,0)}
+
+/* ---------- entrada escalonada ---------- */
+@keyframes entra{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.anima{opacity:0;animation:entra .62s cubic-bezier(.22,1,.36,1) forwards}
+
+/* ---------- accesibilidad ---------- */
+.oculto{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important}
+  .anima{opacity:1}
+}
+@media (max-width:360px){
+  .envoltura{padding:30px 15px}
+  .enlace{min-height:64px;padding:11px 12px;gap:11px}
+  .icono{width:42px;height:42px;border-radius:12px}
+  .txt b{font-size:14.5px}
+  .acciones{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="fondo"></div>
+<div class="malla"></div>
+<div class="orbe a"></div>
+<div class="orbe b"></div>
+
+<main class="envoltura">
+
+  <!-- ═══════ ENCABEZADO ═══════ -->
+  <header class="tapa anima" style="animation-delay:.05s">
+    <img class="logo" src="data:image/png;base64,__LOGO__"
+         alt="DML Médica" width="520" height="219">
+    <h1 class="oculto">DML Médica — Distribuidora Médica León</h1>
+
+    <!-- ✏️ CAMBIA: textos del encabezado -->
+    <span class="rotulo">Distribuidora Médica León</span>
+    <p class="lema">Equipo médico, de rescate y emergencia</p>
+
+    <div class="chips">
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        León, Gto. · México
+      </span>
+    </div>
+  </header>
+
+  <!-- ═══════ ENLACES ═══════ -->
+  <!-- ✏️ CAMBIA: para agregar una red, copia un bloque <li>…</li> completo
+       y cambia href, la clase del icono, el <b> y el <i>. -->
+  <div class="titulo-sec anima" style="animation-delay:.10s"><span>Síguenos en nuestras redes</span></div>
+  <h2 class="oculto">Enlaces oficiales</h2>
+  <ul class="enlaces">
+
+    <li class="anima" style="animation-delay:.14s">
+      <a class="enlace" href="https://www.instagram.com/dmlmedica/?hl=es-la" target="_blank" rel="noopener noreferrer">
+        <span class="icono i-ig" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.6"/>
+            <circle cx="12" cy="12" r="4.4"/>
+            <circle cx="17.4" cy="6.6" r="1.35" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
+        <span class="txt"><b>Instagram</b><i>@dmlmedica</i></span>
+        <svg class="flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </a>
+    </li>
+
+    <li class="anima" style="animation-delay:.20s">
+      <a class="enlace" href="https://www.facebook.com/profile.php?id=61561692536106" target="_blank" rel="noopener noreferrer">
+        <span class="icono i-fb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.6 22v-8.2h2.8l.42-3.2H13.6V8.5c0-.93.26-1.56 1.59-1.56h1.7V4.08A22.7 22.7 0 0 0 14.42 4c-2.46 0-4.14 1.5-4.14 4.26v2.34H7.5v3.2h2.78V22z"/>
+          </svg>
+        </span>
+        <span class="txt"><b>Facebook</b><i>DML Médica</i></span>
+        <svg class="flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </a>
+    </li>
+
+    <li class="anima" style="animation-delay:.26s">
+      <a class="enlace" href="https://www.tiktok.com/@dml_medica" target="_blank" rel="noopener noreferrer">
+        <span class="icono i-tk" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.9 2h-3.1v13.2a2.6 2.6 0 1 1-2.6-2.6c.24 0 .47.03.69.1v-3.2a5.9 5.9 0 0 0-.69-.04 5.77 5.77 0 1 0 5.77 5.77V9.06A7.2 7.2 0 0 0 21.3 10.4V7.28a4.1 4.1 0 0 1-2.9-1.2A4.35 4.35 0 0 1 16.9 2z"/>
+          </svg>
+        </span>
+        <span class="txt"><b>TikTok</b><i>@dml_medica</i></span>
+        <svg class="flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </a>
+    </li>
+
+    <li class="anima" style="animation-delay:.32s">
+      <a class="enlace" href="https://www.youtube.com/channel/UCExyg464aHi95KObGlQB74g" target="_blank" rel="noopener noreferrer">
+        <span class="icono i-yt" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.27 5 12 5 12 5s-6.27 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.73 19 12 19 12 19s6.27 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10.1 15.02 15.3 12l-5.2-3.02z"/>
+          </svg>
+        </span>
+        <span class="txt"><b>YouTube</b><i>Canal de DML Médica</i></span>
+        <svg class="flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </a>
+    </li>
+
+    <li class="anima" style="animation-delay:.38s">
+      <a class="enlace" href="https://whatsapp.com/channel/0029Vaohei9GE56iuFlMqP2W" target="_blank" rel="noopener noreferrer">
+        <span class="icono i-wa" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2.4a9.5 9.5 0 0 0-8.2 14.28L2.4 21.6l5.05-1.4A9.5 9.5 0 1 0 12.04 2.4zm0 1.72a7.79 7.79 0 1 1-3.98 14.48l-.28-.17-2.98.82.8-2.9-.19-.3A7.79 7.79 0 0 1 12.04 4.12zm-3.5 3.9c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.43 1.03 2.6c.13.16 1.75 2.78 4.32 3.79 2.13.84 2.57.67 3.03.63.46-.04 1.49-.6 1.7-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.16-.48-.29-.25-.12-1.49-.73-1.72-.82-.23-.08-.4-.12-.57.13-.16.25-.65.82-.8.99-.14.16-.29.19-.54.06-.25-.12-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.01-.38.11-.5.11-.11.25-.29.38-.44.12-.15.16-.25.24-.42.08-.16.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.4-.42-.55-.42z"/>
+          </svg>
+        </span>
+        <span class="txt"><b>Canal de WhatsApp</b><i>Novedades y lanzamientos</i></span>
+        <svg class="flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </a>
+    </li>
+
+  </ul>
+
+  <!-- ═══════ ACCIONES ═══════ -->
+  <div class="acciones anima" style="animation-delay:.50s">
+    <button class="btn" type="button" id="btnCompartir">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+      Compartir
+    </button>
+    <button class="btn" type="button" id="btnQr" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.4"/><rect x="14" y="3" width="7" height="7" rx="1.4"/><rect x="3" y="14" width="7" height="7" rx="1.4"/><path d="M14 14h3v3h-3zM20 14h1M14 20h3M20 17v4" stroke-linecap="round"/></svg>
+      Ver QR
+    </button>
+  </div>
+
+  <!-- ═══════ PIE ═══════ -->
+  <footer class="pie anima" style="animation-delay:.56s">
+    <div class="regla"></div>
+    <!-- ✏️ CAMBIA: pie de página -->
+    <strong style="font-weight:800;color:rgba(255,255,255,.9)">DML Médica</strong> · Distribuidora Médica León<br>
+    <a href="https://dml-medica.com/" target="_blank" rel="noopener noreferrer">dml-medica.com</a><br>
+    <span style="opacity:.75">© <span id="anio">2026</span> · Todos los derechos reservados</span>
+  </footer>
+
+</main>
+
+<!-- ═══════ MODAL QR ═══════ -->
+<div class="velo" id="velo" role="dialog" aria-modal="true" aria-labelledby="tituloQr" aria-hidden="true">
+  <div class="tarjeta-qr">
+    <h2 id="tituloQr">Escanea para abrir</h2>
+    <p>Apunta la cámara de tu celular a este código para ver todas nuestras redes.</p>
+    <div class="marco-qr">__QR__</div>
+    <div class="pie-qr">__URL__</div>
+    <button class="cerrar" type="button" id="btnCerrar">Cerrar</button>
+  </div>
+</div>
+
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  'use strict';
+  var URL_PORTAL = '__URL__';
+
+  document.getElementById('anio').textContent = new Date().getFullYear();
+
+  var velo    = document.getElementById('velo');
+  var btnQr   = document.getElementById('btnQr');
+  var btnCer  = document.getElementById('btnCerrar');
+  var btnComp = document.getElementById('btnCompartir');
+  var aviso   = document.getElementById('aviso');
+  var temporizador;
+
+  function avisar(texto){
+    aviso.textContent = texto;
+    aviso.classList.add('visible');
+    clearTimeout(temporizador);
+    temporizador = setTimeout(function(){ aviso.classList.remove('visible'); }, 2600);
+  }
+
+  function abrirQr(){
+    velo.classList.add('abierto');
+    velo.setAttribute('aria-hidden','false');
+    // el foco se pasa cuando el velo ya es visible (si no, el navegador lo ignora)
+    setTimeout(function(){ btnCer.focus(); }, 80);
+  }
+  function cerrarQr(){
+    velo.classList.remove('abierto');
+    velo.setAttribute('aria-hidden','true');
+    btnQr.focus();
+  }
+
+  btnQr.addEventListener('click', abrirQr);
+  btnCer.addEventListener('click', cerrarQr);
+  velo.addEventListener('click', function(e){ if(e.target === velo) cerrarQr(); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && velo.classList.contains('abierto')) cerrarQr();
+  });
+
+  btnComp.addEventListener('click', function(){
+    var datos = {
+      title: 'DML Médica — Nuestras redes',
+      text: 'Todas las redes sociales de DML Médica',
+      url: URL_PORTAL
+    };
+    if (navigator.share) {
+      navigator.share(datos).catch(function(){ /* el usuario canceló */ });
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(URL_PORTAL)
+        .then(function(){ avisar('Enlace copiado'); })
+        .catch(function(){ avisar(URL_PORTAL); });
+    } else {
+      avisar(URL_PORTAL);
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
