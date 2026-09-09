@@ -9,7 +9,7 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(BASE, '_build')
 
 # ── 1. URL pública del portal (si cambia, edítala aquí y vuelve a correr) ──
-URL = 'https://redes.dml-medica.com/'
+URL = 'https://dmlmedica.netlify.app/'
 
 FUENTES = 'C:/Users/GEFORCE/AppData/Local/Microsoft/Windows/Fonts'
 MARCA   = 'C:/Users/GEFORCE/Desktop/CODEC CLAUDE/dml-design/brand'

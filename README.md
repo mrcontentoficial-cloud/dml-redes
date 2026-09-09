@@ -3,10 +3,10 @@
 Página tipo "link en bio" para DML Médica. Se comparte con un **código QR**: quien lo escanea
 llega a una sola pantalla con botones a todas las redes de la empresa.
 
-**URL pública:** https://redes.dml-medica.com/
+**URL pública:** https://dmlmedica.netlify.app/
 
-> Mientras el subdominio termina de configurarse, la página también responde en
-> https://mrcontentoficial-cloud.github.io/dml-redes/
+> Se aloja en Netlify porque no requiere tocar el DNS de dml-medica.com (no tenemos acceso
+> a ese panel). El repo de GitHub queda como fuente y respaldo.
 
 ## Qué incluye
 
@@ -41,20 +41,18 @@ Todo lo editable está marcado dentro del HTML con el comentario `✏️ CAMBIA`
 
 Los cambios de texto y de enlaces se hacen directo en `index.html`; no hace falta compilar nada.
 
-## Dominio
+## Hosting
 
-El subdominio `redes.dml-medica.com` apunta a GitHub Pages con un **CNAME** en Cloudflare:
+La página vive en **Netlify**: `https://dmlmedica.netlify.app/`
 
-```
-Tipo    CNAME
-Nombre  redes
-Destino mrcontentoficial-cloud.github.io
-Proxy   DNS only (nube gris)
-TTL     Auto
-```
+Para publicar una versión nueva se arrastra la carpeta `SUBIR-A-NETLIFY/` (que solo contiene
+el `index.html`) sobre https://app.netlify.com/drop, o se sube desde el sitio ya creado en
+*Deploys → Drag and drop*. El nombre del sitio en Netlify **tiene que seguir siendo `dmlmedica`**:
+es el que trae grabado el código QR impreso.
 
-El archivo `CNAME` de este repo es el que le dice a GitHub Pages qué dominio atender: si se
-borra, el sitio vuelve a responder solo en la dirección `github.io`.
+Se descartó `redes.dml-medica.com` porque exige agregar un CNAME en el Cloudflare del dominio
+y nadie del equipo tiene acceso a ese panel. Si algún día se consigue, el cambio es: CNAME
+`redes` → `mrcontentoficial-cloud.github.io` (Proxy: DNS only) y reapuntar el QR.
 
 ## Cómo regenerar (solo si cambia la URL, el logo o el QR)
 

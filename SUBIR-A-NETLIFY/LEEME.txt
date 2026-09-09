@@ -1,0 +1,17 @@
+ESTA CARPETA ES LA QUE SE ARRASTRA A NETLIFY
+============================================
+
+1. Entra a  https://app.netlify.com/drop
+2. Arrastra ESTA CARPETA COMPLETA (SUBIR-A-NETLIFY) sobre el recuadro.
+3. Espera unos segundos: te da una direccion con nombre aleatorio
+   (algo como  brave-cupcake-a1b2c3.netlify.app ).
+4. IMPORTANTE - hay que cambiarle el nombre:
+      Site configuration  >  Site details  >  Change site name
+      Escribe exactamente:   dmlmedica
+5. Queda publicado en:   https://dmlmedica.netlify.app/
+
+El nombre TIENE que ser "dmlmedica": es el que trae grabado el codigo QR.
+Si estuviera ocupado, avisale a Claude para regenerar el QR con otro nombre.
+
+(El archivo LEEME.txt tambien se publica pero no estorba; si prefieres,
+ borralo antes de arrastrar la carpeta.)
